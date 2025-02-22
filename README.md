@@ -19,6 +19,13 @@ yarn add eslint --dev
 yarn start 
 ```
 
+### Pour lancer la page web :
+```bash
+yarn install
+yarn add eslint --dev
+yarn dev 
+```
+
 ## Contexte
 
 Le projet consiste à créer une API de gestion de tâches avec NestJS, Prisma, et MySQL comme base de données. L'objectif est de pouvoir effectuer des opérations CRUD sur les tâches, telles que la création, la mise à jour, la suppression et l'affichage des tâches.
