@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  mysql57:
+    container_name: mysql57
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    networks:
+      - mysql57
+    volumes:
+      - mysql57:/var/lib/mysql
+    ports:
+      - 3306:3306
+      - 3000:3000
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+
+volumes:
+  mysql57:
+    external: true
+
+networks:
+  mysql57:
+    external: true
