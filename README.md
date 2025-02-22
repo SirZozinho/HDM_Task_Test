@@ -1,5 +1,24 @@
 # Compte Rendu - Développement de l'API de gestion des tâches
 
+### Pour lancer la BD :
+```bash
+docker network create mysql57
+docker volume create mysql57
+docker compose -f stack.local.yml up -d
+```
+
+### Pour exécuter les migrations prisma :
+```bash
+npx prisma migrate dev
+```
+
+### Pour lancer l'API
+```bash
+yarn install
+yarn add eslint --dev
+yarn start 
+```
+
 ## Contexte
 
 Le projet consiste à créer une API de gestion de tâches avec NestJS, Prisma, et MySQL comme base de données. L'objectif est de pouvoir effectuer des opérations CRUD sur les tâches, telles que la création, la mise à jour, la suppression et l'affichage des tâches.
