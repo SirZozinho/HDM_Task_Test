@@ -1,5 +1,7 @@
 # Compte Rendu - Développement de l'API de gestion des tâches
 
+# [VIDEO DE PRESENTATION](https://youtu.be/BS1DrK9npTY)
+
 ### Pour lancer la BD :
 ```bash
 docker network create mysql57
